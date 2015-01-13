@@ -32,4 +32,20 @@ public class Test
         }
         
     }
+    
+    /**
+     * Metodo que saca por pantalla la suma de todos los numeros comprendidos entre
+     * 0 y 10 ambos incluidos
+     */
+    public void sumValues()
+    {
+        int index=0;
+        int cont = 0; // variable que acumula la suma de los numeros
+        while(index<11)
+        {
+            cont = cont + index;
+            index= index + 1;
+        }
+        System.out.println(cont);
+    }
 }
