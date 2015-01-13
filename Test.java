@@ -48,4 +48,27 @@ public class Test
         }
         System.out.println(cont);
     }
+    
+    /**
+     * Metodo que muestra por pantalla la suma de los numeros comprendidos entre a y b
+     * ambos incluidos
+     */
+    public void sumValuesInterval(int a,int b)
+    {
+        int aux = 0;
+        if(b<a)
+        {
+            aux=a;
+            a=b;
+            b=aux;
+        }
+        int index = a;
+        int cont = 0;
+        while(index<b+1)
+        {
+            cont = cont + index;
+            index = index + 1 ;
+        }
+        System.out.println(cont);
+    }
 }
