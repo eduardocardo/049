@@ -71,4 +71,27 @@ public class Test
         }
         System.out.println(cont);
     }
+    
+    /**
+     * Metodo que devuelve true si el parametro n es primo o falso si no lo es
+     */
+    public boolean isPrime(int n)
+    {
+        boolean primo = false;
+        int index = 2;
+        float cont = 0;
+        while(index < (n-1))
+        {
+            if(n%index==0)
+            {
+                primo = false;
+            }
+            else
+            {
+                primo = true;
+            }
+            index=index + 1;
+        }
+        return primo;
+    }
 }
